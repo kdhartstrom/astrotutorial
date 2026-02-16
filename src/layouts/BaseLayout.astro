@@ -15,6 +15,7 @@ const { pageTitle } = Astro.props;
   <body>
     <Header />
     <h1>{pageTitle}</h1>
+    <p>Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
      <slot />
     <Footer />
     <script>
